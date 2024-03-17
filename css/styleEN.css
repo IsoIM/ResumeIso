@@ -1,0 +1,44 @@
+.first__contacts .number-and-email li .number__link {
+  margin: 0px 0px 0px 22px;
+}
+.first__contacts .number-and-email li .email__link {
+  margin: 0px 0px 0px 5px;
+}
+
+.main .info .columns__info .columns .column {
+  width: 370px;
+}
+.main .info .columns__info .columns .column.know-e {
+  width: 330px;
+}
+
+@media (max-width: 992px) {
+  .header__contacts .first__contacts .name {
+    font-size: 37px;
+  }
+}
+@media (max-width: 767px) {
+  .header__contacts .first__contacts .name {
+    font-size: 25px;
+  }
+  .header__contacts .first__contacts .number-and-email li .number__link {
+    margin: 0px 0px 0px 14px;
+  }
+  .header__contacts .first__contacts .number-and-email li .email__link {
+    margin: 0px 0px 0px 3px;
+  }
+}
+@media (max-width: 390px) {
+  .header__contacts .first__contacts .name {
+    font-size: 18px;
+  }
+  .header__contacts .first__contacts .number-and-email li {
+    font-size: 9px;
+  }
+  .header__contacts .first__contacts .number-and-email li .number__link {
+    margin: 0px 0px 0px 11px;
+  }
+  .header__contacts .first__contacts .number-and-email li .email__link {
+    margin: 0px 0px 0px 3px;
+  }
+}

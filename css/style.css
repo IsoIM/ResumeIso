@@ -1,0 +1,586 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: url("../img/паа76ааз.png") center/cover no-repeat fixed;
+  overflow-x: hidden;
+}
+
+.header__image img {
+  max-width: 200px;
+}
+
+.viber img {
+  max-width: 50px;
+}
+
+.facebook img {
+  max-width: 50px;
+}
+
+.telegram img {
+  max-width: 50px;
+}
+
+.whatsapp img {
+  max-width: 37px;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.header:before {
+  content: "";
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #ff8000;
+}
+.header__body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+.header__image {
+  margin: 25px 0px 0px 0px;
+}
+.header__image img {
+  border-radius: 50%;
+  border: 5px solid #22378f;
+}
+.header__contacts {
+  display: flex;
+  width: 100%;
+  margin: 40px 0px 0px 0px;
+  justify-content: space-between;
+}
+.header__contacts .first__contacts {
+  margin: 10px 0px 0px 20px;
+}
+.header__contacts .first__contacts .name {
+  font-size: 50px;
+  color: #ff8000;
+}
+.header__contacts .first__contacts .number-and-email {
+  margin: 15px 0px 0px 0px;
+}
+.header__contacts .first__contacts li {
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0px 10px 1px;
+  background: url("") 0 1px/auto 100% no-repeat;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+.header__contacts .first__contacts li .number__link {
+  margin: 0px 0px 0px 10px;
+}
+.header__contacts .first__contacts li .email__link {
+  margin: 0px 0px 0px 8px;
+}
+.header__contacts .first__contacts li a {
+  text-decoration: none;
+  color: #fff;
+}
+.header__contacts .first__contacts li a:visited {
+  color: purple;
+}
+.header__contacts .first__contacts li a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.header__contacts .first__contacts li a:active {
+  color: #ff8000;
+}
+.header__contacts .next__contacts-languages {
+  margin: 10px 0px 0px 0px;
+  float: right;
+}
+.header__contacts .next__contacts-languages .languages {
+  justify-content: end;
+  display: flex;
+  margin: 10px 0px 0px 0px;
+}
+.header__contacts .next__contacts-languages .languages .ua a,
+.header__contacts .next__contacts-languages .languages .en a {
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  border: 2px solid #fff;
+  border-radius: 20%;
+  padding: 5px;
+}
+.header__contacts .next__contacts-languages .languages .ua a:hover,
+.header__contacts .next__contacts-languages .languages .en a:hover {
+  color: blue;
+  border: 2px solid blue;
+}
+.header__contacts .next__contacts-languages .languages .en a {
+  margin: 0px 0px 0px 20px;
+}
+.header__contacts .next__contacts-languages .inet__contacts {
+  display: flex;
+  margin: 40px 0px 0px 0px;
+}
+.header__contacts .next__contacts-languages .inet__contacts li {
+  padding: 0px 0px 0px 5px;
+}
+.header__contacts .next__contacts-languages .inet__contacts .viber img {
+  transition: all 1s ease 0s;
+}
+.header__contacts .next__contacts-languages .inet__contacts .viber img:hover {
+  max-width: 70px;
+  transition: all 1s ease 0s;
+}
+.header__contacts .next__contacts-languages .inet__contacts .facebook {
+  margin: 1px 0px 0px 0px;
+}
+.header__contacts .next__contacts-languages .inet__contacts .facebook img {
+  transition: all 1s ease 0s;
+}
+.header__contacts .next__contacts-languages .inet__contacts .facebook img:hover {
+  max-width: 70px;
+  transition: all 1s ease 0s;
+}
+.header__contacts .next__contacts-languages .inet__contacts .telegram {
+  margin: 1px 0px 0px 0px;
+}
+.header__contacts .next__contacts-languages .inet__contacts .telegram img {
+  transition: all 1s ease 0s;
+}
+.header__contacts .next__contacts-languages .inet__contacts .telegram img:hover {
+  max-width: 70px;
+  transition: all 1s ease 0s;
+}
+.header__contacts .next__contacts-languages .inet__contacts .whatsapp {
+  margin: 4px 0px 0px 0px;
+}
+.header__contacts .next__contacts-languages .inet__contacts .whatsapp img {
+  transition: all 1s ease 0s;
+}
+.header__contacts .next__contacts-languages .inet__contacts .whatsapp img:hover {
+  max-width: 57px;
+  transition: all 1s ease 0s;
+}
+
+.main .info {
+  margin: 30px 0px;
+}
+.main .info .first__info {
+  margin: 50px 0px 0px 0px;
+}
+.main .info .first__info .text {
+  color: #fff;
+  font-size: 25px;
+  width: 440px;
+  line-height: 30px;
+}
+.main .info .columns__info {
+  margin: 50px 0px 0px 0px;
+}
+.main .info .columns__info .columns {
+  display: flex;
+  justify-content: space-between;
+}
+.main .info .columns__info .column .title {
+  color: #ff8000;
+  font-size: 30px;
+  margin: 0px 0px 10px 0px;
+}
+.main .info .columns__info .column .text {
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+}
+.main .info .columns__info .column.know-e {
+  width: 300px;
+}
+.main .info .full__info {
+  padding: 0px 0px 20px 0px;
+  margin: 50px 0px 0px 0px;
+}
+.main .info .full__info .title {
+  font-size: 30px;
+  color: #ff8000;
+  margin: 0px 0px 20px 0px;
+}
+.main .info .full__info .text {
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+}
+.main .info .full__info .text p {
+  margin: 15px 0px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+  .header__contacts .next__contacts-languages .inet__contacts .viber img,
+  .header__contacts .next__contacts-languages .inet__contacts .viber img:hover, .header__contacts .next__contacts-languages .inet__contacts .facebook img,
+  .header__contacts .next__contacts-languages .inet__contacts .facebook img:hover, .header__contacts .next__contacts-languages .inet__contacts .telegram img,
+  .header__contacts .next__contacts-languages .inet__contacts .telegram img:hover {
+    max-width: 50px;
+    transition: none;
+  }
+  .header__contacts .next__contacts-languages .inet__contacts .whatsapp img,
+  .header__contacts .next__contacts-languages .inet__contacts .whatsapp img:hover {
+    max-width: 37px;
+    transition: none;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 800px;
+  }
+  .header__contacts .first__contacts .name {
+    font-size: 40px;
+  }
+  .header__contacts .first__contacts .number-and-email li {
+    font-size: 18px;
+  }
+  .header__contacts .next__contacts-languages .languages .ua a, .header__contacts .next__contacts-languages .languages .en a {
+    font-size: 18px;
+  }
+  .main .info .first__info .text {
+    font-size: 20px;
+    width: 350px;
+  }
+  .main .info .columns__info .columns .column .title {
+    font-size: 25px;
+  }
+  .main .info .columns__info .columns .column .text {
+    font-size: 20px;
+  }
+  .main .info .columns__info .columns .column.know-e {
+    width: 230px;
+  }
+  .main .info .full__info .title {
+    font-size: 25px;
+  }
+  .main .info .full__info .text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 160px;
+    left: 0;
+    height: 8px;
+  }
+  .header__image {
+    margin: 30px 0px 0px 0px;
+  }
+  .header__image img {
+    max-width: 150px;
+    border: 5px solid #22378f;
+  }
+  .header__contacts .first__contacts {
+    margin: 15px 0px 0px 10px;
+  }
+  .header__contacts .first__contacts .name {
+    font-size: 27px;
+  }
+  .header__contacts .first__contacts .number-and-email {
+    margin: 10px 0px 0px 0px;
+  }
+  .header__contacts .first__contacts .number-and-email li {
+    margin: 5px 0px 5px 0px;
+    font-size: 13px;
+  }
+  .header__contacts .first__contacts .number-and-email .number__link {
+    margin: 0px 0px 0px 8px;
+  }
+  .header__contacts .first__contacts .number-and-email .email__link {
+    margin: 0px 0px 0px 6px;
+  }
+  .header__contacts .next__contacts-languages {
+    margin: 15px 0px 0px 10px;
+  }
+  .header__contacts .next__contacts-languages .languages .ua a, .header__contacts .next__contacts-languages .languages .en a {
+    font-size: 13px;
+  }
+  .header__contacts .next__contacts-languages .inet__contacts {
+    margin: 20px 0px 0px 0px;
+  }
+  .header__contacts .next__contacts-languages .inet__contacts .viber img,
+  .header__contacts .next__contacts-languages .inet__contacts .viber img:hover, .header__contacts .next__contacts-languages .inet__contacts .facebook img,
+  .header__contacts .next__contacts-languages .inet__contacts .facebook img:hover, .header__contacts .next__contacts-languages .inet__contacts .telegram img,
+  .header__contacts .next__contacts-languages .inet__contacts .telegram img:hover {
+    max-width: 40px;
+    transition: none;
+  }
+  .header__contacts .next__contacts-languages .inet__contacts .whatsapp img,
+  .header__contacts .next__contacts-languages .inet__contacts .whatsapp img:hover {
+    max-width: 27px;
+    transition: none;
+  }
+  .main .info .first__info .text {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .main .info .columns__info .columns .column .title {
+    font-size: 23px;
+  }
+  .main .info .columns__info .columns .column .text {
+    font-size: 17px;
+  }
+  .main .info .columns__info .columns .column.know-e {
+    width: 210px;
+  }
+  .main .info .full__info .title {
+    font-size: 23px;
+  }
+  .main .info .full__info .text {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 550px) {
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 0;
+    height: 7px;
+  }
+  .header__image {
+    margin: 35px 0px 0px 0px;
+  }
+  .header__image img {
+    max-width: 140px;
+  }
+  .header__contacts .first__contacts {
+    margin: 20px 0px 0px 10px;
+  }
+  .header__contacts .first__contacts .name {
+    font-size: 20px;
+  }
+  .header__contacts .first__contacts .number-and-email li {
+    font-size: 12px;
+  }
+  .header__contacts .first__contacts .number-and-email .number__link {
+    margin: 0px 0px 0px 6px;
+  }
+  .header__contacts .first__contacts .number-and-email .email__link {
+    margin: 0px 0px 0px 4px;
+  }
+}
+@media (max-width: 440px) {
+  .container {
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+  .header__body {
+    display: block;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+  }
+  .header__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px 0px 0px 0px;
+  }
+  .header__image img {
+    max-width: 110px;
+    border: 3px solid #22378f;
+  }
+  .header__contacts {
+    display: inline-block;
+  }
+  .header__contacts .first__contacts {
+    margin: 5px 0px 0px 120px;
+  }
+  .header__contacts .first__contacts .name {
+    font-size: 20px;
+  }
+  .header__contacts .first__contacts .number-and-email li {
+    font-size: 10px;
+  }
+  .header__contacts .next__contacts-languages {
+    float: left;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+  }
+  .header__contacts .next__contacts-languages .languages {
+    position: absolute;
+    top: 140px;
+    left: 60%;
+  }
+  .header__contacts .next__contacts-languages .languages .ua a, .header__contacts .next__contacts-languages .languages .en a {
+    font-size: 10px;
+    border: 2px solid #fff;
+    border-radius: 15%;
+    padding: 5px;
+  }
+  .header__contacts .next__contacts-languages .inet__contacts {
+    margin: 20px 0px 0px 0px;
+  }
+  .header__contacts .next__contacts-languages .inet__contacts .viber img,
+  .header__contacts .next__contacts-languages .inet__contacts .viber img:hover, .header__contacts .next__contacts-languages .inet__contacts .facebook img,
+  .header__contacts .next__contacts-languages .inet__contacts .facebook img:hover, .header__contacts .next__contacts-languages .inet__contacts .telegram img,
+  .header__contacts .next__contacts-languages .inet__contacts .telegram img:hover {
+    max-width: 30px;
+    transition: none;
+  }
+  .header__contacts .next__contacts-languages .inet__contacts .whatsapp {
+    margin: 3.5px 0px 0px 2px;
+  }
+  .header__contacts .next__contacts-languages .inet__contacts .whatsapp img,
+  .header__contacts .next__contacts-languages .inet__contacts .whatsapp img:hover {
+    max-width: 21px;
+    transition: none;
+  }
+  .main .info .first__info .text {
+    width: 100%;
+  }
+  .main .info .columns__info .columns {
+    display: block;
+  }
+  .main .info .columns__info .columns .column {
+    margin: 0px 0px 20px 0px;
+  }
+  .main .info .full__info .text {
+    width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .container {
+    max-width: 380px;
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+  .main .info .first__info .text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .main .info .columns__info .columns .column .title {
+    font-size: 21px;
+  }
+  .main .info .columns__info .columns .column .text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .main .info .columns__info .first__info .title {
+    font-size: 21px;
+  }
+  .main .info .columns__info .first__info .text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
